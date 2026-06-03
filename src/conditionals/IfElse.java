@@ -13,8 +13,15 @@ public class IfElse {
 //			// SEMPRE USARE DELLE ESPRESSIONI BOOLEANE, VALORI BOOLEANI OPPURE METODI CHE RITORNANO UN BOOLEANO
 //		else System.out.println("La stringa non è vuota!");
 
+		// ******************************** TERNARY *****************************************
+
 		double totale = 50.0;
 		double spedizione = totale >= 50.0 ? 0 : 5.99;
 		System.out.println("Le spese di spedizione sono: " + spedizione);
+
+		int x = 1, y = 2, z = 3;
+		int w = x > y ? (y > z ? y : z) : (Math.max(x, y));
+		System.out.println(w);
+
 	}
 }
